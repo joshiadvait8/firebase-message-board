@@ -8,17 +8,11 @@ import {
 } from "react-native";
 import { Input, Card, Button, Icon } from "native-base";
 import * as firebase from "firebase";
+import { firebaseConfig } from "./firebaseConfig";
 
-//fireabse config
-const firebaseConfig = {
-  apiKey: "AIzaSyD07za5hBoYVROHeNtq8uaMQrfFfZEMiR8",
-  authDomain: "reactbootcamp-9c44a.firebaseapp.com",
-  databaseURL: "https://reactbootcamp-9c44a.firebaseio.com",
-  projectId: "reactbootcamp-9c44a",
-  storageBucket: "reactbootcamp-9c44a.appspot.com",
-  messagingSenderId: "853141223186",
-  appId: "1:853141223186:web:03f2d2e91d183945"
-};
+// //fireabse config
+//Add  your configuration object from Firebase here or store in separate file named firebaseconfig.js
+
 firebase.initializeApp(firebaseConfig);
 export default class App extends React.Component {
   constructor(props) {

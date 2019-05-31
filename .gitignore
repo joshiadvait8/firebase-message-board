@@ -5,3 +5,5 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+# add your firebase databse config
+firebaseConfig.js
